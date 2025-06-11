@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Course Project</string>
+
+    <string name="app_logo">شعار التطبيق</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="user_type_hint">نوع المستخدم</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="register_link">إنشاء حساب جديد</string>
+    <!-- قائمة أنواع المستخدمين للـ Spinner -->
+    <string-array name="user_types">
+        <item>طالب</item>
+        <item>معلم</item>
+        <item>مسجل</item>
+    </string-array>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal"
+        android:background="@color/background">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/school"
+            app:tint="@color/primary" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الدخول"
+            android:textSize="26sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="البريد الإلكتروني"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="كلمة المرور"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نوع المستخدم"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/userTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الدخول"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إنشاء حساب جديد"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

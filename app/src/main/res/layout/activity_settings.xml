@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعدادات"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الاسم: أحمد محمد"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البريد: user@example.com"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/userTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نوع المستخدم: مدير"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="24dp"/>
+
+        <Switch
+            android:id="@+id/notificationsSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تفعيل الإشعارات"
+            android:textColor="#333333"
+            android:thumbTint="#4CAF50"
+            android:trackTint="#E0E0E0"
+            android:layout_marginBottom="16dp"/>
+
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الوضع الليلي"
+            android:textColor="#333333"
+            android:thumbTint="#4CAF50"
+            android:trackTint="#E0E0E0"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الخروج"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E53935"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</ScrollView>
